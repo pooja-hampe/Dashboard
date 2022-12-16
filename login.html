@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+            .container{
+    position: fixed;
+    height: auto;
+    width: auto;
+    background-color:white;
+    margin: 50px;
+    border: 4px solid black;
+    border-radius: 15px;
+    
+    padding-right: 20px;
+}
+input,
+.btn {
+  width: 250px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  opacity: 0.80;
+  display: inline-block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  width: fit-content;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+.col {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.login{
+    align-self: center;
+}
+    </style>
+       
+</head>
+<body>
+    <div class="container">
+        <form>
+          <div class="row">
+             <div class="col">
+              <div style="text-align:center;">
+                  <input type="text" name="username" placeholder="Username" style="border: 2px solid gray;" required><br>
+                  <input type="password" name="password" placeholder="Password" style="border: 2px solid gray;" required>
+                  <br>
+                  <input class="login" type="submit" value="Login" onclick="action">
+                  <br>
+              </div>   
+            </div>
+        </div>
+       </form>
+        <form  style="margin-left: 10px; padding-left: 10px;padding-bottom: 15px; text-align: center;">
+        <div>
+          <button type="submit"  style="color:white ;background-color: black;" class="btn">Sign up</button>
+          <button href="#" style="color:white; background-color: black;" class="btn">Forgot password?</button>
+      </div>
+      </form>
+      </div>
+
+    </div>
+</body>
+</html>
